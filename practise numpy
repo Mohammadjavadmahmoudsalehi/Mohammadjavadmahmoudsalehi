@@ -1,0 +1,172 @@
+import numpy as np
+In [ ]:
+a=np.array([1,2,3,4])
+a
+Out[ ]:
+array([1, 2, 3, 4])
+In [ ]:
+b=np.matrix([1,2,3,4])
+b
+Out[ ]:
+matrix([[1, 2, 3, 4]])
+In [ ]:
+np.multiply(a,a)
+Out[ ]:
+array([ 1,  4,  9, 16])
+In [ ]:
+a@a
+Out[ ]:
+30
+In [ ]:
+np.prod(a)
+Out[ ]:
+24
+In [ ]:
+p_array=np.array([1,2,3])
+p_array+5
+Out[ ]:
+array([6, 7, 8])
+In [ ]:
+c=np.ones((3,4))
+c
+Out[ ]:
+array([[1., 1., 1., 1.],
+       [1., 1., 1., 1.],
+       [1., 1., 1., 1.]])
+In [ ]:
+d=np.array([5,6,2])
+d
+Out[ ]:
+array([5, 6, 2])
+In [ ]:
+g=np.ones((3,1))
+g
+Out[ ]:
+array([[1.],
+       [1.],
+       [1.]])
+In [ ]:
+n=np.array([5,6,7])
+g+n
+Out[ ]:
+array([[6., 7., 8.],
+       [6., 7., 8.],
+       [6., 7., 8.]])
+In [ ]:
+np.sum(a)
+Out[ ]:
+10
+In [ ]:
+np.subtract(a,a)
+Out[ ]:
+array([0, 0, 0, 0])
+In [ ]:
+np.divide([17,37,45],3)
+Out[ ]:
+array([ 5.66666667, 12.33333333, 15.        ])
+In [ ]:
+np.floor_divide([17,37,45],3)
+Out[ ]:
+array([ 5, 12, 15])
+In [ ]:
+np.math.sqrt(36)
+Out[ ]:
+6.0
+In [ ]:
+np.math.nan
+Out[ ]:
+nan
+In [ ]:
+np.random.uniform(1,10)
+Out[ ]:
+1.9344149408969469
+In [ ]:
+np.random.randint(1,10)
+Out[ ]:
+7
+In [ ]:
+np.random.standard_normal((1,2))
+Out[ ]:
+array([[ 0.13375118, -0.11432178]])
+In [ ]:
+np.arange(1,10,3)
+Out[ ]:
+array([1, 4, 7])
+In [ ]:
+np.linspace(1,10,4)
+Out[ ]:
+array([ 1.,  4.,  7., 10.])
+In [ ]:
+my_mask=a>2
+a[my_mask]
+Out[ ]:
+array([3, 4])
+In [ ]:
+my_mask2=np.logical_and(a>1,a<4)
+a[my_mask2]
+Out[ ]:
+array([2, 3])
+In [ ]:
+np.zeros((2,4))
+Out[ ]:
+array([[0., 0., 0., 0.],
+       [0., 0., 0., 0.]])
+In [ ]:
+np.size(a)
+Out[ ]:
+4
+In [ ]:
+np.shape(a)
+Out[ ]:
+(4,)
+In [ ]:
+aa=np.array([1,2,3,4,3,6,7])
+aa
+Out[ ]:
+array([1, 2, 3, 4, 3, 6, 7])
+In [ ]:
+np.unique(a)
+Out[ ]:
+array([1, 2, 3, 4])
+In [ ]:
+bb=np.array([6,7,8,9])
+bb
+Out[ ]:
+array([6, 7, 8, 9])
+In [ ]:
+np.union1d(aa,bb)
+Out[ ]:
+array([1, 2, 3, 4, 6, 7, 8, 9])
+In [ ]:
+np.intersect1d(aa,bb)
+Out[ ]:
+array([6, 7])
+In [ ]:
+np.mean(aa)
+Out[ ]:
+3.7142857142857144
+In [ ]:
+np.median(aa)
+Out[ ]:
+3.0
+In [ ]:
+np.std(aa)
+Out[ ]:
+1.9794866372215738
+In [ ]:
+np.var(aa)
+Out[ ]:
+3.918367346938775
+In [ ]:
+chandjomleii=np.array([1,2,4])
+np.polyval(chandjomleii,4)
+Out[ ]:
+28
+In [ ]:
+np.polyder(chandjomleii)
+Out[ ]:
+array([2, 2])
+In [ ]:
+np.polyint(chandjomleii)
+Out[ ]:
+array([0.33333333, 1.        , 4.        , 0.        ])
