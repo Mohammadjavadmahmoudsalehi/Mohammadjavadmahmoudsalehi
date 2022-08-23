@@ -1,0 +1,19 @@
+import numpy as np 
+import pandas as pd
+In [ ]:
+mySeries=pd.Series([1,2],index=['row1','row2'])
+mySeries
+In [ ]:
+mySeries.values
+In [ ]:
+mySeries.index
+In [ ]:
+mySeries.row2
+In [ ]:
+mySeries.rename({'row2':'a'})
+In [ ]:
+myArray=np.array([[1,5,9,13],[2,6,10,14],[3,7,11,15],[4,8,12,16]])
+myDf2=pd.DataFrame(myArray,index=['row1','row2','row3','row4'],columns=['col1','col2','col3','col4'])
+myDf2
+In [ ]:
+myDf2.iloc[0][1]
